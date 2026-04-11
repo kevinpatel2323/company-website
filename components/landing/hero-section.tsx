@@ -102,7 +102,7 @@ export function HeroSection() {
         </div>
         
         {/* Description */}
-        <div className="max-w-2xl">
+        <div className="max-w-2xl pb-48">
           <p 
             className={`text-xl lg:text-2xl text-muted-foreground leading-relaxed mb-8 transition-all duration-700 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
