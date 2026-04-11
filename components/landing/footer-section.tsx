@@ -4,28 +4,27 @@ import { ArrowUpRight } from "lucide-react";
 import { AnimatedWave } from "./animated-wave";
 
 const footerLinks = {
-  Product: [
-    { name: "Features", href: "#features" },
-    { name: "How it works", href: "#how-it-works" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "Integrations", href: "#integrations" },
-  ],
-  Developers: [
-    { name: "Documentation", href: "#developers" },
-    { name: "API Reference", href: "#" },
-    { name: "SDK", href: "#developers" },
-    { name: "Status", href: "#" },
+  Services: [
+    { name: "Brand & Strategy", href: "#services" },
+    { name: "Digital Design", href: "#services" },
+    { name: "Development", href: "#services" },
+    { name: "Growth & Analytics", href: "#services" },
   ],
   Company: [
-    { name: "About", href: "#" },
+    { name: "Portfolio", href: "#portfolio" },
+    { name: "About us", href: "#" },
     { name: "Blog", href: "#" },
-    { name: "Careers", href: "#", badge: "Hiring" },
-    { name: "Contact", href: "#" },
+    { name: "Contact", href: "#contact" },
+  ],
+  Resources: [
+    { name: "Case Studies", href: "#" },
+    { name: "Testimonials", href: "#" },
+    { name: "Press", href: "#" },
   ],
   Legal: [
     { name: "Privacy", href: "#" },
     { name: "Terms", href: "#" },
-    { name: "Security", href: "#security" },
+    { name: "Credits", href: "#" },
   ],
 };
 
@@ -50,12 +49,12 @@ export function FooterSection() {
             {/* Brand Column */}
             <div className="col-span-2">
               <a href="#" className="inline-flex items-center gap-2 mb-6">
-                <span className="text-2xl font-display">Optimus</span>
-                <span className="text-xs text-muted-foreground font-mono">TM</span>
+                <span className="text-2xl font-display">Innovate</span>
+                <span className="text-xs text-muted-foreground font-mono">Studios</span>
               </a>
 
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-xs">
-                The platform for teams who ship. Build, deploy, and scale with unprecedented velocity.
+                We craft beautiful, high-performing digital solutions that help ambitious brands thrive in the digital world.
               </p>
 
               {/* Social Links */}
@@ -102,13 +101,13 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-8 border-t border-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            2025 Optimus. All rights reserved.
+            2025 Innovate Studios. All rights reserved.
           </p>
 
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-green-500" />
-              All systems operational
+              Ready to collaborate
             </span>
           </div>
         </div>

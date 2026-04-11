@@ -4,32 +4,32 @@ import { useEffect, useState } from "react";
 
 const testimonials = [
   {
-    quote: "Optimus transformed our deployment pipeline. What used to take hours now happens in seconds.",
+    quote: "Innovate Studios completely transformed our brand. Their design thinking and execution were exceptional. Our product launch exceeded all expectations.",
     author: "Sarah Chen",
-    role: "CTO",
-    company: "Meridian Labs",
-    metric: "10x faster deployments",
+    role: "CEO",
+    company: "TechVision Inc",
+    metric: "300% increase in conversions",
   },
   {
-    quote: "The developer experience is unmatched. Our team's productivity has never been higher.",
+    quote: "Working with this team was a game-changer. They understood our vision and delivered something even better than we imagined.",
     author: "Marcus Webb",
-    role: "Engineering Lead",
-    company: "Flux Systems",
-    metric: "40% more features shipped",
-  },
-  {
-    quote: "Finally, infrastructure that scales with our ambition. Zero downtime since we switched.",
-    author: "Elena Rodriguez",
-    role: "VP Engineering",
-    company: "Beacon AI",
-    metric: "99.99% uptime",
-  },
-  {
-    quote: "The integrations are seamless. We connected our entire stack in a single afternoon.",
-    author: "James Liu",
     role: "Founder",
-    company: "Prism Analytics",
-    metric: "50+ integrations used",
+    company: "DataFlow Pro",
+    metric: "2x user engagement",
+  },
+  {
+    quote: "The entire process was seamless, professional, and transparent. Their attention to detail and communication set them apart from other agencies.",
+    author: "Elena Rodriguez",
+    role: "Product Director",
+    company: "CloudFirst Solutions",
+    metric: "15% cost reduction",
+  },
+  {
+    quote: "More than just developers, they&apos;re strategic partners who care about your success. Delivered ahead of schedule and under budget.",
+    author: "James Liu",
+    role: "VP Business",
+    company: "InnovateLabs",
+    metric: "$2M in new revenue",
   },
 ];
 
@@ -56,7 +56,7 @@ export function TestimonialsSection() {
         {/* Section Label */}
         <div className="flex items-center gap-4 mb-16">
           <span className="font-mono text-xs tracking-widest text-muted-foreground uppercase">
-            What people say
+            Client success stories
           </span>
           <div className="flex-1 h-px bg-foreground/10" />
           <span className="font-mono text-xs text-muted-foreground">
@@ -138,7 +138,7 @@ export function TestimonialsSection() {
         {/* Company Logos Marquee Label */}
         <div className="mt-24 pt-12 border-t border-foreground/10">
           <p className="font-mono text-xs tracking-widest text-muted-foreground uppercase mb-8 text-center">
-            Trusted by forward-thinking teams
+            Trusted by ambitious brands
           </p>
         </div>
       </div>
@@ -148,7 +148,7 @@ export function TestimonialsSection() {
         <div className="flex gap-16 items-center marquee">
           {[...Array(2)].map((_, setIdx) => (
             <div key={setIdx} className="flex gap-16 items-center shrink-0">
-              {["Meridian Labs", "Flux Systems", "Beacon AI", "Prism Analytics", "Nova Tech", "Quantum Corp", "Atlas Digital", "Vertex Labs"].map(
+              {["TechVision Inc", "DataFlow Pro", "CloudFirst Solutions", "InnovateLabs", "Nova Tech", "Quantum Corp", "Atlas Digital", "Vertex Labs"].map(
                 (company) => (
                   <span
                     key={`${setIdx}-${company}`}

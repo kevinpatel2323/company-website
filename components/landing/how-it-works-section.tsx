@@ -5,38 +5,45 @@ import { useEffect, useRef, useState } from "react";
 const steps = [
   {
     number: "I",
-    title: "Connect your tools",
-    description: "Integrate with your existing stack in minutes. We support 200+ data sources out of the box.",
-    code: `import { optimus } from '@optimus/core'
+    title: "Plan & Strategy",
+    description: "We start with discovery. Understanding your goals, audience, and market helps us create a roadmap for success.",
+    code: `// Project Kickoff
+const strategy = {
+  goals: 'Clear metrics',
+  timeline: 'Realistic schedule',
+  scope: 'Well-defined deliverables',
+  budget: 'Transparent pricing'
+}
 
-optimus.connect({
-  source: 'your-database',
-  sync: true
-})`,
+// Ready to build`,
   },
   {
     number: "II",
-    title: "Build your workflow",
-    description: "Design powerful automations with our visual builder or write code directly.",
-    code: `optimus.workflow('process', {
-  trigger: 'event',
-  actions: [
-    'validate',
-    'transform', 
-    'deliver'
-  ]
-})`,
+    title: "Design & Prototype",
+    description: "Our designers craft beautiful interfaces backed by user research and best practices. We iterate until perfection.",
+    code: `// Design Phase
+const design = {
+  wireframes: 'User flows',
+  mockups: 'High-fidelity designs',
+  prototype: 'Interactive demo',
+  feedback: 'Client reviews'
+}
+
+// Approved for dev`,
   },
   {
     number: "III",
-    title: "Ship to production",
-    description: "Deploy globally with zero configuration. Your app goes live in under 30 seconds.",
-    code: `optimus.deploy({
-  target: 'production',
-  regions: 'auto'
-})
+    title: "Build & Launch",
+    description: "Our developers bring designs to life with clean, scalable code. We test thoroughly and deploy with confidence.",
+    code: `// Development Complete
+const launch = {
+  code: 'Production-ready',
+  testing: 'QA approved',
+  deployment: 'Live & optimized',
+  support: '24/7 available'
+}
 
-// Deployed to 12 regions`,
+// Success!`,
   },
 ];
 
@@ -66,7 +73,7 @@ export function HowItWorksSection() {
 
   return (
     <section
-      id="how-it-works"
+      id="process"
       ref={sectionRef}
       className="relative py-24 lg:py-32 bg-foreground text-background overflow-hidden"
     >
@@ -95,9 +102,9 @@ export function HowItWorksSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Three steps.
+            Our proven process.
             <br />
-            <span className="text-background/50">Infinite possibilities.</span>
+            <span className="text-background/50">From vision to victory.</span>
           </h2>
         </div>
 

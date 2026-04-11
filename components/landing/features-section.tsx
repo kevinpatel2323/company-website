@@ -5,26 +5,26 @@ import { useEffect, useRef, useState } from "react";
 const features = [
   {
     number: "01",
-    title: "Instant Deployment",
-    description: "Push to production in seconds. Our edge network ensures your applications load instantly, anywhere in the world.",
+    title: "Brand & Strategy",
+    description: "We help you define your identity, vision, and market positioning. From logo design to complete brand systems, we craft the visual language that makes your business unforgettable.",
     visual: "deploy",
   },
   {
     number: "02",
-    title: "AI-Native Workflows",
-    description: "Build intelligent applications with built-in AI capabilities. From inference to training, everything scales automatically.",
+    title: "Digital Design",
+    description: "Beautiful, user-centered interface design that engages your audience. We create responsive web and mobile designs that are both stunning and functional.",
     visual: "ai",
   },
   {
     number: "03",
-    title: "Real-time Collaboration",
-    description: "Work together seamlessly. Live preview, instant feedback, and version control that actually makes sense.",
+    title: "Full-Stack Development",
+    description: "We build powerful, scalable applications from frontend to backend. Our team delivers clean code and robust solutions using modern technologies.",
     visual: "collab",
   },
   {
     number: "04",
-    title: "Enterprise Security",
-    description: "Bank-grade encryption, SOC 2 compliance, and granular access controls. Your data stays yours.",
+    title: "Growth & Analytics",
+    description: "Data-driven strategies to grow your business. We implement analytics, optimization, and marketing solutions that deliver measurable results.",
     visual: "security",
   },
 ];
@@ -314,7 +314,7 @@ export function FeaturesSection() {
 
   return (
     <section
-      id="features"
+      id="services"
       ref={sectionRef}
       className="relative py-24 lg:py-32"
     >
@@ -323,16 +323,16 @@ export function FeaturesSection() {
         <div className="mb-16 lg:mb-24">
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
             <span className="w-8 h-px bg-foreground/30" />
-            Capabilities
+            Our Services
           </span>
           <h2
             className={`text-4xl lg:text-6xl font-display tracking-tight transition-all duration-700 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Everything you need.
+            Expert services to elevate
             <br />
-            <span className="text-muted-foreground">Nothing you don&apos;t.</span>
+            <span className="text-muted-foreground">your digital presence</span>
           </h2>
         </div>
 
