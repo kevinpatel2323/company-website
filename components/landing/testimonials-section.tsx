@@ -79,7 +79,7 @@ export function TestimonialsSection() {
                   : "opacity-100 translate-y-0"
               }`}
             >
-              <p className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] tracking-tight text-foreground">
+              <p className="font-display text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-[1.1] tracking-tight text-foreground">
                 "{activeTestimonial.quote}"
               </p>
             </blockquote>
@@ -116,7 +116,7 @@ export function TestimonialsSection() {
               <span className="font-mono text-xs tracking-widest text-muted-foreground uppercase block mb-4">
                 Key Result
               </span>
-              <p className="font-display text-3xl md:text-4xl text-foreground">
+              <p className="font-display text-2xl md:text-4xl text-foreground">
                 {activeTestimonial.metric}
               </p>
             </div>

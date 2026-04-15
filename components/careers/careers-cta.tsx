@@ -35,7 +35,7 @@ export function CareersCta() {
               <br />
               <span className="text-muted-foreground">not job titles</span>
             </h2>
-            <p className={`text-xl text-muted-foreground leading-relaxed mb-10 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+            <p className={`text-base sm:text-xl text-muted-foreground leading-relaxed mb-8 sm:mb-10 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               If you&apos;re exceptional at what you do and think you&apos;d thrive here, send us a note. The best hires we&apos;ve made were for roles that didn&apos;t exist when we met.
             </p>
             <div className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>

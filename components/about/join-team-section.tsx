@@ -54,7 +54,7 @@ export function JoinTeamSection() {
           </h2>
 
           <p
-            className={`text-xl lg:text-2xl text-muted-foreground leading-relaxed mb-12 transition-all duration-700 delay-200 ${
+            className={`text-base sm:text-xl lg:text-2xl text-muted-foreground leading-relaxed mb-8 sm:mb-12 transition-all duration-700 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >

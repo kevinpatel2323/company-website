@@ -94,7 +94,7 @@ export default async function BlogPostPage({
               {post.title}
             </h1>
 
-            <p className="text-xl text-muted-foreground leading-relaxed">{post.excerpt}</p>
+            <p className="text-base sm:text-xl text-muted-foreground leading-relaxed">{post.excerpt}</p>
 
             <div className="mt-8 flex items-center gap-3 pt-8 border-t border-foreground/10">
               <div className="flex h-9 w-9 items-center justify-center rounded-full bg-foreground/10 text-sm font-medium">

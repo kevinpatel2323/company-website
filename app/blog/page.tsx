@@ -28,12 +28,12 @@ export default function BlogPage() {
             <span className="w-8 h-px bg-foreground/30" />
             Blog &amp; Case Studies
           </span>
-          <h1 className="text-5xl lg:text-7xl font-display leading-[0.95] tracking-tight mb-8 max-w-3xl">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display leading-[0.95] tracking-tight mb-8 max-w-3xl">
             Ideas, case studies,
             <br />
             <span className="text-muted-foreground">and things we learned</span>
           </h1>
-          <p className="text-xl text-muted-foreground max-w-xl leading-relaxed">
+          <p className="text-base sm:text-xl text-muted-foreground max-w-xl leading-relaxed">
             Practical writing on product design, engineering velocity, and how we think about building digital products that last.
           </p>
         </div>
