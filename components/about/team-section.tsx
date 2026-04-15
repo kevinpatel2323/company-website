@@ -4,14 +4,10 @@ import { useEffect, useRef, useState } from 'react';
 
 const team = [
   {
-    name: "Sarah Chen",
-    role: "Founder & Creative Director",
-    description: "Visionary leader with 15+ years of experience in digital design and brand strategy.",
-  },
-  {
-    name: "Marcus Webb",
-    role: "Co-founder & CTO",
-    description: "Engineering innovator passionate about building scalable, elegant solutions.",
+    name: "Kevin Patel",
+    role: "Founder and CEO",
+    description:
+      "Leading the vision, strategy, and execution behind products that help teams ship exceptional digital experiences.",
   },
 ];
 
@@ -61,28 +57,33 @@ export function TeamSection() {
           </p>
         </div>
 
-        {/* Team Grid */}
-        <div className="grid md:grid-cols-2 gap-12">
+        {/* Team */}
+        <div className="grid grid-cols-1 gap-12 max-w-3xl">
           {team.map((member, index) => (
             <div
-              key={index}
-              className={`group transition-all duration-700 ${
+              key={member.name}
+              className={`group flex flex-col gap-8 transition-all duration-700 sm:flex-row sm:items-start sm:gap-10 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
               style={{
                 transitionDelay: `${index * 100}ms`,
               }}
             >
-              <div className="aspect-square bg-foreground/5 rounded-lg mb-6 border border-foreground/10" />
-              <h3 className="text-2xl lg:text-3xl font-display tracking-tight mb-2">
-                {member.name}
-              </h3>
-              <p className="text-sm font-mono text-muted-foreground mb-4">
-                {member.role}
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                {member.description}
-              </p>
+              <div
+                className="aspect-square w-full max-w-[280px] shrink-0 rounded-lg border border-foreground/10 bg-foreground/5 sm:max-w-none sm:w-56 lg:w-64"
+                aria-hidden
+              />
+              <div className="min-w-0 flex-1">
+                <h3 className="text-2xl lg:text-3xl font-display tracking-tight mb-2">
+                  {member.name}
+                </h3>
+                <p className="mb-4 text-sm font-mono text-muted-foreground">
+                  {member.role}
+                </p>
+                <p className="leading-relaxed text-muted-foreground break-words">
+                  {member.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

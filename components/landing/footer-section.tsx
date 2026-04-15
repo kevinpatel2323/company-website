@@ -11,13 +11,14 @@ const footerLinks = {
     { name: "Growth & Analytics", href: "#services" },
   ],
   Company: [
-    { name: "Portfolio", href: "#portfolio" },
+    { name: "Our work", href: "/work" },
     { name: "About us", href: "/about" },
-    { name: "Blog", href: "#" },
+    { name: "Careers", href: "/careers" },
+    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ],
   Resources: [
-    { name: "Case Studies", href: "#" },
+    { name: "Case Studies", href: "/blog" },
     { name: "Testimonials", href: "#" },
     { name: "Press", href: "#" },
   ],
@@ -49,8 +50,8 @@ export function FooterSection() {
             {/* Brand Column */}
             <div className="col-span-2">
               <a href="#" className="inline-flex items-center gap-2 mb-6">
-                <span className="text-2xl font-display">Innovate</span>
-                <span className="text-xs text-muted-foreground font-mono">Studios</span>
+                <span className="text-2xl font-display">Tachyon Tech</span>
+                <span className="text-xs text-muted-foreground font-mono"></span>
               </a>
 
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-xs">
@@ -101,7 +102,7 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-8 border-t border-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            2025 Innovate Studios. All rights reserved.
+            2025 Tachyon Tech . All rights reserved.
           </p>
 
           <div className="flex items-center gap-4 text-sm text-muted-foreground">

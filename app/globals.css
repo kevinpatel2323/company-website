@@ -3,6 +3,30 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* ── Global overflow fix ──────────────────────────────────────────
+   Prevents long unbreakable strings (URLs, hashes, random tokens)
+   from escaping their containers anywhere on the site.
+   overflow-wrap: break-word  — breaks at word boundaries first,
+                                then within a word if no other option.
+   word-break: break-word     — legacy fallback for older WebKit.
+   min-width: 0 on children   — allows flex/grid items to shrink below
+                                their intrinsic content size.
+──────────────────────────────────────────────────────────────────── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* Grid and flex children need min-w-0 to actually shrink */
+  .grid > *,
+  .flex > * {
+    min-width: 0;
+  }
+}
+
 :root {
   --background: oklch(0.985 0.002 90);
   --foreground: oklch(0.12 0.01 60);
@@ -165,6 +189,63 @@
       filter: blur(0);
       transform: translateY(0);
     }
+  }
+
+  @keyframes tech-tag-in {
+    from { opacity: 0; transform: translateY(8px) scale(0.96); }
+    to   { opacity: 1; transform: translateY(0)   scale(1);    }
+  }
+
+  .tech-tag-enter {
+    animation: tech-tag-in 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @keyframes tech-panel-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .tech-panel-enter {
+    animation: tech-panel-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  /* ── 404 glitch ────────────────────────────────────────────── */
+  @keyframes nf-glitch-a {
+    0%,89%,100% { clip-path: inset(0 0 100% 0); transform: translate(0); }
+    90%  { clip-path: inset(28% 0 50% 0); transform: translate(-5px); opacity:.75; }
+    91%  { clip-path: inset(62% 0 12% 0); transform: translate( 5px); opacity:.85; }
+    92%  { clip-path: inset(10% 0 78% 0); transform: translate(-3px); }
+    93%  { clip-path: inset(48% 0 35% 0); transform: translate( 3px); opacity:.9; }
+    94%  { clip-path: inset(0 0 100% 0);  transform: translate(0); }
+  }
+  @keyframes nf-glitch-b {
+    0%,94%,100% { clip-path: inset(0 0 100% 0); transform: translate(0); }
+    95%  { clip-path: inset(70% 0  8% 0); transform: translate( 6px); opacity:.7; }
+    96%  { clip-path: inset(15% 0 65% 0); transform: translate(-6px); }
+    97%  { clip-path: inset(40% 0 30% 0); transform: translate( 4px); opacity:.8; }
+    98%  { clip-path: inset( 5% 0 82% 0); transform: translate(-4px); }
+    99%  { clip-path: inset(0 0 100% 0);  transform: translate(0); }
+  }
+
+  .nf-glitch {
+    position: relative;
+    isolation: isolate;
+  }
+  .nf-glitch::before,
+  .nf-glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    font: inherit;
+    pointer-events: none;
+  }
+  .nf-glitch::before {
+    animation: nf-glitch-a 9s steps(1) infinite;
+    color: oklch(0.45 0.14 260 / 0.85);
+  }
+  .nf-glitch::after {
+    animation: nf-glitch-b 7s steps(1) infinite 1.5s;
+    color: oklch(0.40 0.10 30 / 0.75);
   }
 
   .noise-overlay {

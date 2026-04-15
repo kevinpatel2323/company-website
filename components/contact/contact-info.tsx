@@ -12,7 +12,7 @@ export function ContactInfo() {
         </h3>
         <div className="space-y-6">
           <a 
-            href="mailto:hello@innovate.studios"
+            href="mailto:hello@Tachyon Tech."
             className="flex items-center gap-4 group hover:opacity-80 transition-opacity"
           >
             <div className="w-12 h-12 rounded-full bg-foreground/10 flex items-center justify-center group-hover:bg-foreground/20 transition-colors">
@@ -20,7 +20,7 @@ export function ContactInfo() {
             </div>
             <div>
               <p className="text-sm text-muted-foreground mb-1">Email</p>
-              <p className="text-foreground font-medium">hello@innovate.studios</p>
+              <p className="text-foreground font-medium">hello@Tachyon Tech.</p>
             </div>
           </a>
 
