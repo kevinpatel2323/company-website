@@ -1,0 +1,64 @@
+[
+  {
+    "slug": "dfc",
+    "title": "dfc",
+    "category": "sdfv",
+    "year": "2324",
+    "tagline": "dfvdfv23elekndfkjdfndfvdfv23elekndfkjdfndfvdfv23elekndfkjdfndfvdfv23elekndfkjdfn",
+    "challenge": "dfvdfv23elekndfkjdfndfvdfv23elekndfkjdfndfvdfv23elekndfkjdfndfvdfv23elekndfkjdfn",
+    "approach": "dfvdfv23elekndfkjdfndfvdfv23elekndfkjdfndfvdfv23elekndfkjdfndfvdfv23elekndfkjdfn",
+    "role": "dfvdfv23elekndfkjdfndfvdfv23elekndfkjdfndfvdfv23elekndfkjdfndfvdfv23elekndfkjdfn",
+    "timeline": "vfv",
+    "stack": [
+      "fvdfvd"
+    ],
+    "coverImage": "https://picsum.photos/seed/dfc/1200/900",
+    "processImage": "https://picsum.photos/seed/dfc-process/1600/700",
+    "nextSlug": "northwind-commerce",
+    "outcomes": [
+      {
+        "metric": "TBD",
+        "label": "Key metric 1",
+        "description": "Update after launch."
+      },
+      {
+        "metric": "TBD",
+        "label": "Key metric 2",
+        "description": "Update after launch."
+      },
+      {
+        "metric": "TBD",
+        "label": "Key metric 3",
+        "description": "Update after launch."
+      },
+      {
+        "metric": "TBD",
+        "label": "Key metric 4",
+        "description": "Update after launch."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Discovery",
+        "description": "Define goals, users, and constraints."
+      },
+      {
+        "step": "02",
+        "title": "Design & build",
+        "description": "Prototype and build in tight loops."
+      },
+      {
+        "step": "03",
+        "title": "Launch & evolve",
+        "description": "Ship, measure, iterate."
+      }
+    ],
+    "quote": {
+      "text": "dfvd",
+      "author": "vdfv",
+      "role": "dfv"
+    },
+    "id": "1776277365563"
+  }
+]
