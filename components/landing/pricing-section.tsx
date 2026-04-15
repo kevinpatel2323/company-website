@@ -64,7 +64,7 @@ export function PricingSection() {
           <span className="font-mono text-xs tracking-widest text-muted-foreground uppercase block mb-6">
             Pricing
           </span>
-          <h2 className="font-display text-5xl md:text-6xl lg:text-7xl tracking-tight text-foreground mb-6">
+          <h2 className="font-display text-4xl md:text-6xl lg:text-7xl tracking-tight text-foreground mb-6">
             Simple, transparent
             <br />
             <span className="text-stroke">pricing</span>
@@ -112,7 +112,7 @@ export function PricingSection() {
           {plans.map((plan, idx) => (
             <div
               key={plan.name}
-              className={`relative p-8 lg:p-12 bg-background ${
+              className={`relative p-6 md:p-8 lg:p-12 bg-background ${
                 plan.popular ? "md:-my-4 md:py-12 lg:py-16 border-2 border-foreground" : ""
               }`}
             >

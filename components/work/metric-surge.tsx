@@ -51,7 +51,7 @@ export function MetricSurge({ end, prefix = '', suffix = '', active, delayMs = 0
   }, [active, end, delayMs]);
 
   return (
-    <div className="tabular-nums text-6xl font-display tracking-tight lg:text-8xl">
+    <div className="tabular-nums text-5xl sm:text-6xl font-display tracking-tight lg:text-8xl">
       <span className="inline-block origin-bottom transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)]">
         {prefix}
         {value.toLocaleString()}

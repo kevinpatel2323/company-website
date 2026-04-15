@@ -39,13 +39,13 @@ export function CareersHero() {
               </span>
             </div>
 
-            <h1 className={`text-5xl lg:text-7xl font-display leading-[0.95] tracking-tight mb-8 transition-all duration-1000 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <h1 className={`text-4xl sm:text-5xl lg:text-7xl font-display leading-[0.95] tracking-tight mb-8 transition-all duration-1000 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               Build the future
               <br />
               <span className="text-muted-foreground">with us</span>
             </h1>
 
-            <p className={`text-xl lg:text-2xl text-muted-foreground leading-relaxed mb-12 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+            <p className={`text-base sm:text-xl lg:text-2xl text-muted-foreground leading-relaxed mb-8 sm:mb-12 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               We are a small, senior team that builds products people love. We work in the open, move fast without cutting corners, and care deeply about craft.
             </p>
 

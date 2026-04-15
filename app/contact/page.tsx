@@ -18,12 +18,12 @@ export default function ContactPage() {
               <span className="w-8 h-px bg-foreground/30" />
               Get in touch
             </span>
-            <h1 className="text-5xl lg:text-7xl font-display tracking-tight mb-6 leading-[0.95]">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display tracking-tight mb-6 leading-[0.95]">
               Let&apos;s work
               <br />
               together
             </h1>
-            <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
+            <p className="text-base sm:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
               Have an idea in mind? We&apos;d love to hear about it. Reach out and let&apos;s create something amazing together.
             </p>
           </div>

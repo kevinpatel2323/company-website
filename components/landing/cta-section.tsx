@@ -51,13 +51,13 @@ export function CtaSection() {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
               {/* Left content */}
               <div className="flex-1">
-                <h2 className="text-4xl lg:text-7xl font-display tracking-tight mb-8 leading-[0.95]">
+                <h2 className="text-3xl sm:text-4xl lg:text-7xl font-display tracking-tight mb-8 leading-[0.95]">
                   Let&apos;s create
                   <br />
                   something amazing
                 </h2>
 
-                <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-xl">
+                <p className="text-base sm:text-xl text-muted-foreground mb-8 sm:mb-12 leading-relaxed max-w-xl">
                   Ready to transform your vision into reality? Let&apos;s partner together to build beautiful, high-performing digital solutions.
                 </p>
 

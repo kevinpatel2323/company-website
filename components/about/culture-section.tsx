@@ -56,7 +56,7 @@ export function CultureSection() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              <p className="text-xl lg:text-2xl leading-relaxed mb-6">
+              <p className="text-base sm:text-xl lg:text-2xl leading-relaxed mb-6">
                 We maintain a flexible work environment focused on delivering exceptional results.
               </p>
               <p className="text-background/70 leading-relaxed mb-8">

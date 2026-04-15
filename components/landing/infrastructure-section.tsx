@@ -54,24 +54,24 @@ export function InfrastructureSection() {
               <br />
               default.
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed mb-12">
+            <p className="text-base sm:text-xl text-muted-foreground leading-relaxed mb-8 sm:mb-12">
               Deploy once, run everywhere. Our edge network spans 17 data centers 
               across 6 continents, delivering sub-50ms latency to 99% of the world.
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-3 gap-4 sm:gap-8">
               <div>
-                <div className="text-4xl lg:text-5xl font-display mb-2">17</div>
-                <div className="text-sm text-muted-foreground">Data centers</div>
+                <div className="text-2xl sm:text-4xl lg:text-5xl font-display mb-2">17</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Data centers</div>
               </div>
               <div>
-                <div className="text-4xl lg:text-5xl font-display mb-2">99.99%</div>
-                <div className="text-sm text-muted-foreground">Uptime SLA</div>
+                <div className="text-2xl sm:text-4xl lg:text-5xl font-display mb-2">99.99%</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Uptime SLA</div>
               </div>
               <div>
-                <div className="text-4xl lg:text-5xl font-display mb-2">&lt;50ms</div>
-                <div className="text-sm text-muted-foreground">Global latency</div>
+                <div className="text-2xl sm:text-4xl lg:text-5xl font-display mb-2">&lt;50ms</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Global latency</div>
               </div>
             </div>
           </div>

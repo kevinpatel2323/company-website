@@ -25,7 +25,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
       {/* Animated sphere background */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] lg:w-[800px] lg:h-[800px] opacity-40 pointer-events-none">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] lg:w-[800px] lg:h-[800px] opacity-20 sm:opacity-30 lg:opacity-40 pointer-events-none">
         <AnimatedSphere />
       </div>
       
@@ -102,9 +102,9 @@ export function HeroSection() {
         </div>
         
         {/* Description */}
-        <div className="max-w-2xl pb-48">
+        <div className="max-w-2xl pb-20 sm:pb-32 lg:pb-48">
           <p 
-            className={`text-xl lg:text-2xl text-muted-foreground leading-relaxed mb-8 transition-all duration-700 delay-200 ${
+            className={`text-base sm:text-xl lg:text-2xl text-muted-foreground leading-relaxed mb-8 transition-all duration-700 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
@@ -136,26 +136,43 @@ export function HeroSection() {
         
       </div>
       
-      {/* Stats marquee - full width outside container */}
-      <div 
-        className={`absolute bottom-24 left-0 right-0 transition-all duration-700 delay-500 ${
+      {/* Stats marquee — full width, single-line strip */}
+      <div
+        className={`absolute bottom-8 sm:bottom-16 left-0 right-0 overflow-hidden transition-opacity duration-700 delay-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className="flex gap-16 marquee whitespace-nowrap">
-          {[...Array(2)].map((_, i) => (
-            <div key={i} className="flex gap-16">
-              {[
-                { value: "10+", label: "projects delivered", company: "TECH BRANDS" },
-                { value: "97%", label: "client retention", company: "FORTUNE 500s" },
-                { value: "04 years", label: "of excellence", company: "SINCE 2022" },
-              ].map((stat) => (
-                <div key={`${stat.company}-${i}`} className="flex items-baseline gap-4">
-                  <span className="text-4xl lg:text-5xl font-display">{stat.value}</span>
-                  <span className="text-sm text-muted-foreground">
-                    {stat.label}
-                    <span className="block font-mono text-xs mt-1">{stat.company}</span>
+        {/* marquee: two copies so the seam is invisible */}
+        <div className="flex will-change-transform marquee">
+          {[0, 1].map((setIdx) => (
+            <div
+              key={setIdx}
+              /* shrink-0 keeps each set from squeezing; items-center aligns number + label on one axis */
+              className="flex shrink-0 items-center gap-6 sm:gap-12 lg:gap-16 pr-6 sm:pr-12 lg:pr-16"
+            >
+              {(
+                [
+                  { value: "10+",      label: "projects delivered", company: "TECH BRANDS" },
+                  { value: "97%",      label: "client retention",   company: "FORTUNE 500s" },
+                  { value: "4 years",  label: "of excellence",      company: "SINCE 2022"   },
+                ] as const
+              ).map((stat) => (
+                <div
+                  key={`${stat.company}-${setIdx}`}
+                  /* inline-flex + shrink-0 keeps each stat on a single row */
+                  className="inline-flex shrink-0 items-center gap-2 sm:gap-3"
+                >
+                  <span className="text-xl sm:text-3xl lg:text-4xl font-display leading-none whitespace-nowrap">
+                    {stat.value}
                   </span>
+                  {/* separator */}
+                  <span className="text-foreground/20 text-lg leading-none select-none">·</span>
+                  <span className="hidden sm:flex flex-col leading-tight">
+                    <span className="text-xs text-muted-foreground whitespace-nowrap">{stat.label}</span>
+                    <span className="text-[10px] font-mono text-muted-foreground/50 whitespace-nowrap">{stat.company}</span>
+                  </span>
+                  {/* mobile: show only the label, no stacked company line */}
+                  <span className="sm:hidden text-xs text-muted-foreground whitespace-nowrap">{stat.label}</span>
                 </div>
               ))}
             </div>

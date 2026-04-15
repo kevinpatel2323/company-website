@@ -55,7 +55,7 @@ export function CaseStudyHero({ project }: { project: WorkProject }) {
             </div>
 
             <h1
-              className={`text-5xl lg:text-7xl font-display leading-[0.95] tracking-tight mb-8 transition-all duration-1000 delay-100 ${
+              className={`text-4xl sm:text-5xl lg:text-7xl font-display leading-[0.95] tracking-tight mb-8 transition-all duration-1000 delay-100 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >
@@ -63,7 +63,7 @@ export function CaseStudyHero({ project }: { project: WorkProject }) {
             </h1>
 
             <p
-              className={`text-xl lg:text-2xl text-muted-foreground leading-relaxed transition-all duration-700 delay-200 ${
+              className={`text-base sm:text-xl lg:text-2xl text-muted-foreground leading-relaxed transition-all duration-700 delay-200 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}
             >
