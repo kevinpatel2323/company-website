@@ -71,12 +71,22 @@ const metrics = [
   },
 ];
 
+function formatLiveClock(date: Date) {
+  return date.toLocaleTimeString("en-US", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  });
+}
+
 export function MetricsSection() {
-  const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState<Date | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    setTime(new Date());
     const interval = setInterval(() => setTime(new Date()), 1000);
     return () => clearInterval(interval);
   }, []);
@@ -119,7 +129,7 @@ export function MetricsSection() {
               Live
             </span>
             <span className="text-foreground/30">|</span>
-            <span>{time.toLocaleTimeString()}</span>
+            <span>{time ? formatLiveClock(time) : "—"}</span>
           </div>
         </div>
         
