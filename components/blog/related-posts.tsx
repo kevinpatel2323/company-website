@@ -39,7 +39,7 @@ export function RelatedPosts({ posts }: { posts: BlogPost[] }) {
               <img
                 src={post.coverImage}
                 alt={post.title}
-                className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                className="h-full w-full object-cover grayscale transition-[transform,filter] duration-700 ease-out group-hover:scale-105 group-hover:grayscale-0"
               />
             </div>
             <div className="p-6">

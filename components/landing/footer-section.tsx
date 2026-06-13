@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { AnimatedWave } from "./animated-wave";
 
@@ -19,13 +20,11 @@ const footerLinks = {
   ],
   Resources: [
     { name: "Case Studies", href: "/blog" },
-    { name: "Testimonials", href: "#" },
-    { name: "Press", href: "#" },
+    { name: "Blog", href: "/blog" },
   ],
   Legal: [
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
-    { name: "Credits", href: "#" },
+    { name: "Privacy", href: "/privacy" },
+    { name: "Terms", href: "/terms" },
   ],
 };
 
@@ -49,10 +48,10 @@ export function FooterSection() {
           <div className="grid grid-cols-2 md:grid-cols-6 gap-8 md:gap-12 lg:gap-8">
             {/* Brand Column */}
             <div className="col-span-2 md:col-span-2">
-              <a href="#" className="inline-flex items-center gap-2 mb-6">
+              <Link href="/" className="inline-flex items-center gap-2 mb-6">
                 <span className="text-2xl font-display">Tachyon Tech</span>
                 <span className="text-xs text-muted-foreground font-mono"></span>
-              </a>
+              </Link>
 
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-xs">
                 We craft beautiful, high-performing digital solutions that help ambitious brands thrive in the digital world.
