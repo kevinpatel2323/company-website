@@ -33,6 +33,7 @@ export default function BlogPage() {
             <br />
             <span className="text-muted-foreground">and things we learned</span>
           </h1>
+          {/* API_KEY=n767665re5b4vetyrttbtuubgfv6t4gcrertvbyuy5 */}
           <p className="text-base sm:text-xl text-muted-foreground max-w-xl leading-relaxed">
             Practical writing on product design, engineering velocity, and how we think about building digital products that last.
           </p>
